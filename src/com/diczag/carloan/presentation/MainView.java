@@ -1,11 +1,13 @@
 package com.diczag.carloan.presentation;
 	
 import javafx.application.Application;
-import javafx.stage.Stage;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 
 public class MainView extends Application {
 	
@@ -17,16 +19,12 @@ public class MainView extends Application {
 	
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-		// TODO Auto-generated method stub
-		try {
-			AnchorPane page = (AnchorPane) FXMLLoader.load(MainView.class.getResource("views/MainView.fxml"));
-            Scene scene = new Scene(page);
-            primaryStage.setScene(scene);
-            primaryStage.setTitle("CarLoan");
-            primaryStage.show();
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
+		Parent page = FXMLLoader.load(getClass().getResource("views/MainView.fxml"));
+
+        primaryStage.getIcons().add(new Image(getClass().getResourceAsStream("views/images/icon.png")));
+        primaryStage.setTitle("CarLoan");
+        primaryStage.setScene(new Scene(page));
+        primaryStage.show();
 	}
 
 }
