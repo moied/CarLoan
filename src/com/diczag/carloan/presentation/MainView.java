@@ -25,6 +25,7 @@ public class MainView extends Application {
         primaryStage.setTitle("CarLoan");
         primaryStage.setScene(new Scene(page));
         primaryStage.show();
+        System.out.println("Ciao mondo!");
 	}
 
 }
