@@ -1,14 +1,10 @@
-package com.diczag.carloan.business;
+package com.diczag.carloan.business.entity;
 
 public abstract class Extra {
 	protected float importo;
 	
 	public float getImporto() {
 		return importo;
-	}
-
-	public void setImporto(float importo) {
-		this.importo = importo;
 	}
 
 	public Extra(float importo, int giorni) {

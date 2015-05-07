@@ -1,4 +1,4 @@
-package com.diczag.carloan.business;
+package com.diczag.carloan.business.entity;
 
 public class GuidatoreAddizionale extends Extra {
 	private int numero;
@@ -14,16 +14,6 @@ public class GuidatoreAddizionale extends Extra {
 	
 	public void setNumero(int numero) {
 		this.numero = numero;
-	}
-
-	@Override
-	public float calcolaCosto() {
-		// TODO Auto-generated method stub
-		return super.calcolaCosto(giorni);
-		
-		return f * getNumero();
-	}
-	
-	
+	}	
 	
 }

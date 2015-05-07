@@ -9,6 +9,8 @@ import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
+import com.diczag.carloan.business.entity.*;
+
 public class MainView extends Application {
 	
 	@FXML
@@ -25,10 +27,16 @@ public class MainView extends Application {
         primaryStage.setTitle("CarLoan");
         primaryStage.setScene(new Scene(page));
         primaryStage.show();
-        System.out.println("Ciao mondo!");
+        
+        /* Test Extra
         int giorni = 5;
         int giorniSet = 9;
-        
+        Extra extra1 = new GuidatoreAddizionale(giorni, 4);
+        Extra extra2 = new GuidatoreAddizionale(giorniSet, 4);
+        Extra extra3 = new Assicurazione(giorniSet);
+        System.out.println("Extra 1: " + extra1.getImporto());
+        System.out.println("Extra 2: " + extra2.getImporto()); 
+        System.out.println("Extra 3: " + extra3.getImporto());*/
 	}
 
 }
