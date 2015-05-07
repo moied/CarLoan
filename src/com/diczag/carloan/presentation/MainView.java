@@ -26,6 +26,9 @@ public class MainView extends Application {
         primaryStage.setScene(new Scene(page));
         primaryStage.show();
         System.out.println("Ciao mondo!");
+        int giorni = 5;
+        int giorniSet = 9;
+        
 	}
 
 }
