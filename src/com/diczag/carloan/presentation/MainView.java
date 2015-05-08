@@ -28,15 +28,15 @@ public class MainView extends Application {
         primaryStage.setScene(new Scene(page));
         primaryStage.show();
         
-        /* Test Extra
+        // Test Extra
         int giorni = 5;
         int giorniSet = 9;
-        Extra extra1 = new GuidatoreAddizionale(giorni, 4);
-        Extra extra2 = new GuidatoreAddizionale(giorniSet, 4);
-        Extra extra3 = new Assicurazione(giorniSet);
-        System.out.println("Extra 1: " + extra1.getImporto());
-        System.out.println("Extra 2: " + extra2.getImporto()); 
-        System.out.println("Extra 3: " + extra3.getImporto());*/
+        Extra extra1 = new AdditionalDriver(giorni, true, 4);
+        Extra extra2 = new AdditionalDriver(giorniSet, false, 0);
+        Extra extra3 = new Insurance(giorniSet, true);
+        System.out.println("Extra 1: " + extra1.getPrice());
+        System.out.println("Extra 2: " + extra2.getPrice()); 
+        System.out.println("Extra 3: " + extra3.getPrice());
 	}
 
 }

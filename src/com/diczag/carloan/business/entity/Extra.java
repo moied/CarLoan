@@ -1,20 +1,29 @@
 package com.diczag.carloan.business.entity;
 
+import java.math.BigDecimal;
+
 public abstract class Extra {
-	protected float importo;
 	
-	public float getImporto() {
-		return importo;
+	private BigDecimal price;
+	
+	protected int day;
+	
+	protected boolean active;
+	
+	public Extra(int day, boolean active) {
+		this.day = day;
+	}
+	
+	public boolean isActive() {
+		return active;
 	}
 
-	public Extra(float importo, int giorni) {
-		this.importo = calcolaCosto(importo, giorni);
+	public BigDecimal getPrice() {
+		return price;
 	}
 	
-	private float calcolaCosto(float importo, int giorni) {
-		if (giorni < 7) 
-			return giorni * importo;
-		else
-			return (giorni * importo)/2;
+	protected void setPrice(BigDecimal price) {
+		this.price = price;
 	}
+	
 }
