@@ -7,7 +7,7 @@ public class PricePerDay {
 	/** Soglia base giornaliera: Base giornaliera valida fino al settimo giorno */
 	public static final int dailyBasisThreshold = 7;
 	
-	/** Calcola il prezzo in base hai giorni di prenotazione tenendo conto
+	/** Calcola il prezzo in base ai giorni di prenotazione tenendo conto
 	 * 	della base giornaliera e settimanale valida per tutte le entità che
 	 *  gestiscono il prezzo.	
 	 * 
