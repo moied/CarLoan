@@ -1,6 +1,8 @@
 package com.diczag.carloan.business.entity;
 
-public class Person {
+import com.diczag.carloan.business.utility.LogIn;
+
+public abstract class User {
 	
 	protected String taxCode;
 	
@@ -16,7 +18,11 @@ public class Person {
 	
 	protected String eMail;
 	
-	public Person (String taxCode, String name, String surname,
+	private LogIn login;
+
+	Boolean isEmployee;
+	
+	public User (String taxCode, String name, String surname,
 			char gender, String address, String telNumber, String eMail) {
 		this.taxCode = taxCode;
 		this.name = name;
@@ -83,4 +89,17 @@ public class Person {
 	public void seteMail(String eMail) {
 		this.eMail = eMail;
 	}
+	
+	public void setUser(String username, String password) {
+		this.login = new LogIn(username, password);
+	}
+	
+	public Boolean changePwd (String oldPwd, String newPwd) {
+		return (login.changePassword(oldPwd, newPwd));
+	}
+	
+	public Boolean getIsEmployee() {
+		return isEmployee;
+	}
+
 }
