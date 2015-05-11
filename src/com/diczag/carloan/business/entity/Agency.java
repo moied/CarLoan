@@ -1,5 +1,6 @@
 package com.diczag.carloan.business.entity;
 
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -25,7 +26,9 @@ public class Agency {
 		this.city = city;
 		this.address = address;
 		this.telNumber = telNumber;
-		this.faxNumber = faxNumber;		
+		this.faxNumber = faxNumber;	
+		
+		cars = new LinkedList<Car>();
 	}
 	
 	
@@ -105,7 +108,13 @@ public class Agency {
 	}
 	
 	public void addCar (Car c) {
-		cars.add(c);
+		c.setAgency(this);
+		this.cars.add(c);
+	}
+	
+	public void addAllCars (List<Car> cars) {
+		for(Car c : cars) 
+			addCar(c);	
 	}
 	
 	public Boolean removeCar (Car c) {
