@@ -30,6 +30,7 @@ public class MainView extends Application {
         primaryStage.setScene(new Scene(page));
         primaryStage.show();
         
+        // Prova branch michele
         // Test Extra
         /*int giorni = 5;
         int giorniSet = 9;
