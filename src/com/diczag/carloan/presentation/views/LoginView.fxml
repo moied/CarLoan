@@ -21,7 +21,7 @@
       </AnchorPane>
       <AnchorPane fx:id="content" layoutY="168.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1024.0">
          <children>
-            <Label layoutX="498.0" layoutY="227.0" text="Prenotazione" />
+            <Label layoutX="498.0" layoutY="227.0" text="Gestione" />
          </children></AnchorPane>
    </children>
 </AnchorPane>

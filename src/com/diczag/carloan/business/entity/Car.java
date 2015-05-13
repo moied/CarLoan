@@ -10,7 +10,7 @@ public class Car {
 	
 	private CategoryCar category;
 	
-	private Agency agency;
+	/*private Agency agency;
 
 	public Car(String plate, String brand, String model, CategoryCar category, Agency agency) {
 		this.plate = plate;
@@ -18,7 +18,7 @@ public class Car {
 		this.model = model;
 		this.category = category;
 		this.agency = agency;
-	}
+	}*/
 	
 	public String getPlate() {
 		return plate;
@@ -52,12 +52,12 @@ public class Car {
 		this.category = category;
 	}
 	
-	public Agency getAgency() {
+	/*public Agency getAgency() {
 		return agency;
 	}
 
 	public void setAgency(Agency agency) {
 		this.agency = agency;
-	}
+	}*/
 
 }

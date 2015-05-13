@@ -30,6 +30,7 @@ public class MainView extends Application {
         
         // Prova branch michele
         // Test Extra
+        /*
         int giorni = 5;
         int giorniSet = 9;
         Extra extra1 = new AdditionalDriver(giorni, true, 4);
@@ -37,7 +38,7 @@ public class MainView extends Application {
         Extra extra3 = new Insurance(giorniSet, true);
         System.out.println("Extra 1: " + extra1.getPrice());
         System.out.println("Extra 2: " + extra2.getPrice()); 
-        System.out.println("Extra 3: " + extra3.getPrice());
+        System.out.println("Extra 3: " + extra3.getPrice());*/
 	}
 
 }

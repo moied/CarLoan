@@ -6,22 +6,22 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" stylesheets="@css/application.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.diczag.carloan.presentation.views.controllers.MainViewController">
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" stylesheets="@../css/application.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.diczag.carloan.presentation.views.controllers.MainViewController">
    <children>
       <AnchorPane fx:id="header" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="168.0" prefWidth="1024.0" styleClass="header">
          <children>
             <ImageView fitHeight="140.0" fitWidth="500.0" layoutY="14.0">
                <image>
-                  <Image url="@images/logoHeader.png" />
+                  <Image url="@../images/logoHeader.png" />
                </image>
             </ImageView>
-            <Button fx:id="management" layoutX="694.0" layoutY="72.0" mnemonicParsing="false" onAction="#handleManagementButtonAction" text="GESTIONE" />
-            <Button fx:id="reservation" layoutX="796.0" layoutY="72.0" mnemonicParsing="false" onAction="#handleReservationButtonAction" text="PRENOTAZIONE" />
+            <Button fx:id="management" layoutX="694.0" layoutY="72.0" mnemonicParsing="false" onAction="#handleHeaderButtonAction" text="GESTIONE" />
+            <Button fx:id="reservation" layoutX="796.0" layoutY="72.0" mnemonicParsing="false" text="PRENOTAZIONE" />
          </children>
       </AnchorPane>
       <AnchorPane fx:id="content" layoutY="168.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1024.0">
          <children>
-            <Label layoutX="498.0" layoutY="227.0" text="Prenotazione" />
+            <Label layoutX="498.0" layoutY="227.0" text="Gestione" />
          </children></AnchorPane>
    </children>
 </AnchorPane>
