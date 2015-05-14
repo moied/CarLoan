@@ -19,20 +19,17 @@ public class MainViewController {
 	private Button reservation;
 	
 	@FXML
-	private void handleManagementButtonAction(ActionEvent event) throws IOException {
-	     Stage stage = (Stage) management.getScene().getWindow(); 
-	     Parent page = FXMLLoader.load(getClass().getResource("../LoginView.fxml"));
+	private void handleHeaderButtonsAction(ActionEvent event) throws IOException {
+	     Stage stage;
+	     Parent page;
 	     
-	     //create a new scene with root and set the stage
-	     Scene scene = new Scene(page);
-	     stage.setScene(scene);
-	     stage.show();
-	}
-	
-	@FXML
-	private void handleReservationButtonAction(ActionEvent event) throws IOException {
-	     Stage stage = (Stage) reservation.getScene().getWindow(); 
-	     Parent page = FXMLLoader.load(getClass().getResource("../MainView.fxml"));
+	     if (event.getSource() == management) {
+	    	 stage = (Stage) management.getScene().getWindow(); 
+		     page = FXMLLoader.load(getClass().getResource("../LoginView.fxml"));
+	     } else {
+	    	 stage = (Stage) reservation.getScene().getWindow(); 
+		     page = FXMLLoader.load(getClass().getResource("../MainView.fxml"));
+	     }
 	     
 	     //create a new scene with root and set the stage
 	     Scene scene = new Scene(page);

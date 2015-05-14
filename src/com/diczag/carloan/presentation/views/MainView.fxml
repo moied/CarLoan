@@ -15,8 +15,8 @@
                   <Image url="@images/logoHeader.png" />
                </image>
             </ImageView>
-            <Button fx:id="management" layoutX="694.0" layoutY="72.0" mnemonicParsing="false" onAction="#handleManagementButtonAction" text="GESTIONE" />
-            <Button fx:id="reservation" layoutX="796.0" layoutY="72.0" mnemonicParsing="false" onAction="#handleReservationButtonAction" text="PRENOTAZIONE" />
+            <Button fx:id="management" layoutX="694.0" layoutY="72.0" mnemonicParsing="false" onAction="#handleHeaderButtonsAction" text="GESTIONE" />
+            <Button fx:id="reservation" layoutX="796.0" layoutY="72.0" mnemonicParsing="false" onAction="#handleHeaderButtonsAction" text="PRENOTAZIONE" />
          </children>
       </AnchorPane>
       <AnchorPane fx:id="content" layoutY="168.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1024.0">
