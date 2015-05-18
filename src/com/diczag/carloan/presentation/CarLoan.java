@@ -10,12 +10,14 @@ import com.diczag.carloan.presentation.views.controllers.ScreenDispatcher;
 public class CarLoan extends Application {
 	public static String mainFXML = "../MainView.fxml";
 	public static String loginFXML = "../LoginView.fxml";
+	public static String managementFXML = "../ManagementView.fxml";
 	
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		ScreenDispatcher mainContainer = new ScreenDispatcher();
         mainContainer.loadScreen("main", CarLoan.mainFXML);
         mainContainer.loadScreen("login", CarLoan.loginFXML);
+        mainContainer.loadScreen("management", CarLoan.managementFXML);
         mainContainer.setScreen("main");
         
         Scene scene = new Scene(mainContainer);

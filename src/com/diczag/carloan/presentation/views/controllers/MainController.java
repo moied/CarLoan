@@ -13,10 +13,10 @@ public class MainController implements Initializable, ScreenController {
 	private ScreenDispatcher page;
 
 	@FXML
-	private Button management;
+	private Button btnManagement;
 
 	@FXML
-	private Button reservation;
+	private Button btnReservation;
 
 	@Override
 	public void setScreenPane(ScreenDispatcher page) {
@@ -31,8 +31,8 @@ public class MainController implements Initializable, ScreenController {
 	@FXML
 	private void handleHeaderButtonsAction(ActionEvent event)
 			throws IOException {
-		if (event.getSource() == management) 
-			page.setScreen("login");
+		if (event.getSource() == btnManagement) 
+			page.setScreen("management");
 		else 
 			page.setScreen("main");
 

@@ -1,27 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
 <?import java.net.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" stylesheets="@css/application.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.diczag.carloan.presentation.views.controllers.LoginController">
+<AnchorPane id="CarLoan" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="768.0" prefWidth="1024.0" stylesheets="@css/application.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.diczag.carloan.presentation.views.controllers.LoginController">
    <children>
-      <AnchorPane fx:id="header" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="168.0" prefWidth="1024.0" styleClass="header">
+      <AnchorPane id="Header" fx:id="header" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="168.0" prefWidth="1024.0" styleClass="header" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
-            <ImageView fitHeight="140.0" fitWidth="500.0" layoutY="14.0">
+            <ImageView id="Logo" layoutY="14.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="16.0">
                <image>
                   <Image url="@images/logoHeader.png" />
                </image>
             </ImageView>
-            <Button fx:id="management" layoutX="694.0" layoutY="72.0" mnemonicParsing="false" onAction="#handleHeaderButtonsAction" text="GESTIONE" />
-            <Button fx:id="reservation" layoutX="796.0" layoutY="72.0" mnemonicParsing="false" onAction="#handleHeaderButtonsAction" text="PRENOTAZIONE" />
+            <HBox layoutX="759.0" layoutY="23.0" prefHeight="77.0" prefWidth="400.0" spacing="15.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="23.0">
+               <children>
+                  <Button fx:id="btnReservation" mnemonicParsing="false" onAction="#handleHeaderButtonsAction" styleClass="ipad-grey" text="RESERVATION" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btnManagement" mnemonicParsing="false" onAction="#handleHeaderButtonsAction" styleClass="ipad-grey" text="MANAGEMENT" />
+               </children>
+               <padding>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="BOTTOM_CENTER" layoutX="691.0" layoutY="123.0" prefHeight="25.0" prefWidth="319.0" spacing="10.0" AnchorPane.rightAnchor="38.0">
+               <children>
+                  <Label fx:id="lblWelcome" alignment="CENTER" contentDisplay="CENTER" text="Welcome" textFill="WHITE" visible="false" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="Trebuchet MS Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblUser" prefWidth="140.0" textFill="WHITE" visible="false">
+                     <font>
+                        <Font name="Trebuchet MS Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblLogout" text="LOGOUT" textFill="WHITE" visible="false">
+                     <font>
+                        <Font name="Trebuchet MS Bold Italic" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="content" layoutY="168.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1024.0">
+      <AnchorPane layoutY="168.0" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="1024.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
-            <Label layoutX="498.0" layoutY="227.0" text="Gestione" />
+            <Label layoutX="498.0" layoutY="300.0" text="Login" />
          </children></AnchorPane>
    </children>
 </AnchorPane>
