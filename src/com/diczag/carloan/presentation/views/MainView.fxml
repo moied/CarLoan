@@ -44,7 +44,7 @@
                         <Font name="Trebuchet MS Bold" size="20.0" />
                      </font>
                   </Label>
-                  <Label fx:id="lblLogout" text="LOGOUT" textFill="WHITE" visible="false">
+                  <Label fx:id="lblLogout" onMouseClicked="#handleButtonLogout" text="LOGOUT" textFill="WHITE" visible="false">
                      <font>
                         <Font name="Trebuchet MS Bold Italic" size="20.0" />
                      </font>
@@ -53,7 +53,7 @@
             </HBox>
          </children>
       </AnchorPane>
-      <AnchorPane layoutY="168.0" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="1024.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <AnchorPane layoutY="168.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1024.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
             <Label layoutX="498.0" layoutY="300.0" text="Prenotazione" />
          </children></AnchorPane>

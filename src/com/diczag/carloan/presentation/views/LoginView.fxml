@@ -10,7 +10,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="CarLoan" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="768.0" prefWidth="1024.0" stylesheets="@css/application.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.diczag.carloan.presentation.views.controllers.LoginController">
+<AnchorPane id="CarLoan" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" stylesheets="@css/application.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.diczag.carloan.presentation.views.controllers.LoginController">
    <children>
       <AnchorPane id="Header" fx:id="header" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="168.0" prefWidth="1024.0" styleClass="header" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
@@ -44,7 +44,7 @@
                         <Font name="Trebuchet MS Bold" size="20.0" />
                      </font>
                   </Label>
-                  <Label fx:id="lblLogout" text="LOGOUT" textFill="WHITE" visible="false">
+                  <Label fx:id="lblLogout" onMouseClicked="#handleButtonLogout" text="LOGOUT" textFill="WHITE" visible="false">
                      <font>
                         <Font name="Trebuchet MS Bold Italic" size="20.0" />
                      </font>
@@ -53,7 +53,7 @@
             </HBox>
          </children>
       </AnchorPane>
-      <AnchorPane layoutY="168.0" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="1024.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <AnchorPane layoutY="168.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1024.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
             <Label layoutX="498.0" layoutY="300.0" text="Login" />
          </children></AnchorPane>

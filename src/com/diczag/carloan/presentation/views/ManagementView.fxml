@@ -44,7 +44,7 @@
                         <Font name="Trebuchet MS Bold" size="20.0" />
                      </font>
                   </Label>
-                  <Label fx:id="lblLogout" text="LOGOUT" textFill="WHITE" visible="false">
+                  <Label fx:id="lblLogout" onMouseClicked="#handleButtonLogout" text="LOGOUT" textFill="WHITE" visible="false">
                      <font>
                         <Font name="Trebuchet MS Bold Italic" size="20.0" />
                      </font>
@@ -53,9 +53,9 @@
             </HBox>
          </children>
       </AnchorPane>
-      <AnchorPane layoutY="168.0" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="1024.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <AnchorPane layoutY="168.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1024.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
-            <SplitPane dividerPositions="0.19471624266144813" layoutY="46.0" maxHeight="-Infinity" prefHeight="600.0" prefWidth="1024.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <SplitPane dividerPositions="0.19471624266144813" layoutY="46.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1024.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
               <items>
                 <AnchorPane maxWidth="-Infinity" minWidth="-Infinity" prefWidth="224.0" SplitPane.resizableWithParent="false">
                      <children>
@@ -76,7 +76,7 @@
                                     <Font size="20.0" />
                                  </font>
                               </Button>
-                              <Button fx:id="carEmployees" alignment="CENTER" mnemonicParsing="false" prefWidth="224.0" styleClass="ipad-dark-grey" text="EMPLOYEES">
+                              <Button fx:id="btnEmployees" alignment="CENTER" mnemonicParsing="false" prefWidth="224.0" styleClass="ipad-dark-grey" text="EMPLOYEES">
                                  <font>
                                     <Font size="20.0" />
                                  </font>

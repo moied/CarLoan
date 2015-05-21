@@ -5,6 +5,7 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
+import com.diczag.carloan.business.entity.*;
 import com.diczag.carloan.presentation.views.controllers.ScreenDispatcher;
 
 public class CarLoan extends Application {
@@ -12,9 +13,29 @@ public class CarLoan extends Application {
 	public static String loginFXML = "../LoginView.fxml";
 	public static String managementFXML = "../ManagementView.fxml";
 	
+	private User loggedUser;
+	
 	@Override
 	public void start(Stage primaryStage) throws Exception {
+		User newUser = new Customer();
+		newUser.setUsername("m1ky91");
+		newUser.setPassword("180191");
+		User.addUser(newUser);
+		
+		User newUser2 = new Employee();
+		newUser2.setUsername("ivan");
+		newUser2.setPassword("ivan");
+		User.addUser(newUser2);
+		
+		User newUser3 = new Administrator();
+		newUser3.setUsername("admin");
+		newUser3.setPassword("admin");
+		User.addUser(newUser3);
+		
+		loggedUser = newUser;
+		
 		ScreenDispatcher mainContainer = new ScreenDispatcher();
+		mainContainer.setApp(this);
         mainContainer.loadScreen("main", CarLoan.mainFXML);
         mainContainer.loadScreen("login", CarLoan.loginFXML);
         mainContainer.loadScreen("management", CarLoan.managementFXML);
@@ -42,5 +63,13 @@ public class CarLoan extends Application {
 	
 	public static void main(String[] args) {
         launch(args);
+    }
+	
+	public User getLoggedUser() {
+        return loggedUser;
+    }
+	
+	public void userLogout(){
+        loggedUser = null;
     }
 }
